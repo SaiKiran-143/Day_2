@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<h1>Creating an Object using Object Literals.</h1>
+<p id="demo"></p>
+<script> 
+var emp={name:"Sai Kiran", company:"EPAM"}
+document.getElementById("demo").innerHTML = "My name is "+emp.name+" prsent, working at "+emp.company ;
+</script>
+
+<h1>Creating Object using new Keyword</h1>
+<p id="demo1"></p>
+<script>
+var emp1 = new Object();
+emp1.name = "Sai Kiran";
+emp1.company = "EPAM";
+document.getElementById("demo1").innerHTML = "My name is "+emp1.name+" prsent, working at "+emp1.company ;
+</script>
+
+<h1>Creating an Object using this keyword(Constructor)</h1>
+<script>
+function myEmp(name,company){
+this.name=name;
+this.company=company;
+}
+var emp2 = new myEmp("Sai Kiran", "EPAM");
+document.write("My name is "+emp2.name+" prsent, working at "+emp2.company);
+</script>
+
+</body>
+</html>
+
+ 

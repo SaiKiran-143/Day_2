@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Array Concat</h3>
+<script>
+var arr1 = ["Ant","Bat","Cat"];
+var arr2 = ["Egg","Dog","Fan"];
+var result = arr1.concat(arr2);
+document.writeln(result);
+</script>
+
+<h3>Array Pop</h3>
+<script>
+document.write("Removing Last Element: "+ result.pop() +"<br>");
+document.write("Resultant Array is: "+ result);
+</script>
+
+<h3>Array Push</h3>
+<script>
+result.push("Fish");
+document.write("Inserting Fish " +"<br>");
+document.write(result);
+</script>
+
+<h3>Array Sort</h3>
+<script>
+document.write(result.sort()+ "<br>");
+</script>
+
+<h3>Array Reverse</h3>
+<script>
+document.write(result.reverse()+ "<br>");
+</script>
+
+<h3>Array Unshift</h3>
+<script>
+var result1 = result.unshift("Zoo");
+document.write(result);
+</script>
+
+<h3>Array Slice</h3>
+<script>
+var words = ["Sunday","Monday","Tuesday","Thursday"];
+var result1 = words.slice(1,4);
+document.write(result1); 
+</script>
+
+<h3>Array Splice</h3>
+<script>
+var words = ["Sunday","Monday","Tuesday","Thursday"];
+var result1 = words.splice(3,0,"Wendesday");
+document.write(words);
+</script>
+
+
+</body>
+</html>

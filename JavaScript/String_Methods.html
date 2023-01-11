@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>String Methods</head>
+<body>
+
+<h3>String charAt( )</h3>
+<script>						// return the index char at specified index
+var name="Sai Kiran Reddy";
+document.write(name.charAt(4));
+</script>
+
+<h3>String charCodeAt( )</h3>
+<script>						// return the ascii value
+var name="Sai Kiran Reddy";
+document.write(name.charCodeAt(1));
+</script>
+
+<h3>String concat( )</h3>
+<script>                       // Concat two or more strings
+var name="Sai Kiran Reddy";
+var lastname = " Raju";
+document.write(name.concat(lastname));
+</script>
+
+<h3>String indexOf( )</h3>
+<script>						// position value of the char 
+var name="Sai Kiran Reddy";
+document.write(name.indexOf('a'));
+</script>
+
+<h3>String lastIndexOf( )</h3>
+<script>						// position value of the last char 
+var name="Sai Kiran Reddy";
+document.write(name.lastIndexOf('a'));
+</script>
+
+<h3>String toLowerCase( )</h3>
+<script>						// string to lowercase
+var name="Sai Kiran Reddy";
+document.write(name.toLowerCase());
+</script>
+
+<h3>String toUpperCase( )</h3>
+<script>						// string to uppercase
+var name="Sai Kiran Reddy";
+document.write(name.toUpperCase());
+</script>
+
+
+<h3>String replace( ) & replaceAll( )</h3>
+<script>						// string replace
+var name="Sai Kiran Reddy";
+document.write((name.replace('a','A'))+"<br>");
+document.write(name.replaceAll('a','A'));    // string replace All
+</script>
+
+<h3>String trim( )</h3>
+<script>						// remove white spaces at starting and ending of the string
+var name="    Sai Kiran Reddy       ";
+document.write((name.trim())+"<br>");
+document.write((name.trimStart())+"<br>");
+document.write(name.trimEnd());
+</script>
+
+
+<h3>String search( )</h3>
+<script>						// search the value if its match returns index else -1
+var name="Sai Kiran Reddy";
+document.write((name.search('Reddy'))+"<br>");
+document.write(name.search('Raju'));
+</script>
+
+
+<h3>String slice( )</h3>
+<script> // extracts a part of a string and returns the extracted part in a new string.
+var name="Sai Kiran Reddy";
+var ans = name.slice(4);
+document.write(ans);
+</script>
+
+<h3>String substring( )</h3>
+<script>					
+var name="Sai Kiran Reddy";
+document.write(name.substring(4,9));
+</script>
+
+<h3>String substr( )</h3>
+<script>				// the second parameter specifies the length of the extracted part.
+var name="Sai Kiran Reddy";
+document.write(name.substr(4,5));
+</script>
+
+<h3>String padStart( )</h3>
+<script>					// This browser not supporting..
+var name="Sai Kiran Reddy";       
+var res = name.padStart(4,"x");
+document.write(res);
+</script>
+
+<h3>String padEnd( )</h3>
+<script>					// This browser not supporting..
+var name="Sai Kiran Reddy";       
+var res = name.padEnd(4,"x");
+document.write(res);
+</script>
+
+<h3>String includes( )</h3>
+<script>		// method returns true if a string contains a specified value else false
+var name="Sai Kiran Reddy";
+document.write(name.includes("Reddy"));
+</script>
+
+
+</body>
+</html>
